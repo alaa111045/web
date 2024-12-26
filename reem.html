@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html la="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>change password</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgba(255, 199, 196, 0.83);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+    }
+    .container {
+        background-color: rgba(255, 199, 196, 0.83);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+        width: 100%;
+        max-width: 400%;
+}
+.container h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+   border-radius: 4px; 
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+   border-radius: 4px;
+   font-size: 16px;
+   cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+.message{
+    text-align: center;
+    margin-top: 15px;
+   color: beige;
+   }
+   </style>
+   </head>
+   <body>
+    <div class="container">
+        <h2>change password</h2>
+        <form id="change-password-form">
+            <label for="old-password">current password</label>
+            <input type="password" id="old-password" name="oldpassword" placeholder="enter
+
+            <label for="new-password">new password:</label>
+            <input type="password" id="new-password" name="newpassword" placeholder="confi
+             
+            <button type="button" onclick="changepassword()">update password</button>
+            <p class="massage" id="massage"></p>
+        </form>
+    </div>
+          
+    <script>
+        function changepassword() {
+            const oldpassword = document.getElementById('old-password').value;
+            const newpassword = document.getElementById('new-password').value;
+            const confirmpassword = decument.getElementById('confirm-password').value;
+            
+            const massage = document.getElementById('massage');
+
+            if (newpassword !== confirmpassword) {
+                massage.style.color = "white";
+                massage.textContent = "passwords do not match!";
+            } else {
+                massage.style.color = "pink";
+                massage.textContent = "password changed successfully!";
+            }
+        }
+
+    </script>
+    </body>
+</html>

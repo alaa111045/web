@@ -1,0 +1,96 @@
+/* إعدادات عامة */
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #0c94a6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.donation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+.card h3 {
+    color:#0c94a6;
+}
+
+.card button {
+    background-color: #0c94a6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0c94a6;
+}
+
+.about-section {
+    padding: 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-section div {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0c94a6;
+    color: white;
+    margin-top: 20px;
+}
+.main-btn{
+    color: #fff;
+    background-color: #0c94a6;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color:#9932CC ;
+    transform: scale(1.1);
+}

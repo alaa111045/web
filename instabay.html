@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل التبرع - إنستا باي</title>
+    <link rel="shortcut icon" href="insta.jpg" type="image/x-icon">
+    <style>
+        /* إعدادات عامة مع خلفية */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* صورة الخلفية */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+        
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل للصندوق */
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c94a6;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0c94a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color:#0c94a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1> التبرع عبر إنستا باي</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <!-- اسم العميل -->
+            <label for="client-name">اسم العميل:</label>
+            <input type="text" id="client-name" name="client_name" placeholder="أدخل اسم العميل" required>
+
+            <!-- رقم المرسل منه -->
+            <label for="sender-number">رقم الهاتف المرسل منه:</label>
+            <input type="text" id="sender-number" name="sender_number" placeholder="أدخل رقم الهاتف" required>
+
+            <!-- البريد الإلكتروني -->
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <!-- مبلغ التبرع -->
+            <label for="donation-amount">مبلغ التبرع:</label>
+            <input type="number" id="donation-amount" name="donation_amount" placeholder="أدخل مبلغ التبرع" required>
+
+            <!-- رفع صورة التحويل -->
+            <label for="transfer-image">إرفاق صورة الإرسال:</label>
+            <input type="file" id="transfer-image" name="transfer_image" accept="image/*" required>
+
+            <!-- زر التأكيد -->
+            <button type="submit">تأكيد التبرع</button>
+        </form>
+    </div>
+
+</body>
+</html>

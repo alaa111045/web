@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التبرع عبر فودافون كاش</title>
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+    <style>
+        /* إعدادات عامة مع خلفية */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* صورة الخلفية */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+        /* طبقة للظل */
+        
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل للصندوق */
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c94a6;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 55px; /* المسافة بين الأعمدة */
+            margin-bottom: 15px;
+        }
+
+        .form-row input {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0c94a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0c94a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>التبرع عبر فودافون كاش</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <!-- اسم العميل الأول واسم العميل الأخير -->
+            <div class="form-row">
+                <div>
+                    <label for="first-name">اسم العميل الأول:</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="أدخل الاسم الأول" required>
+                </div>
+                <div>
+                    <label for="last-name">اسم العميل الأخير:</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="أدخل الاسم الأخير" required>
+                </div>
+            </div>
+
+            <!-- رقم الهاتف -->
+            <label for="phone-number">رقم الهاتف:</label>
+            <input type="text" id="phone-number" name="phone_number" placeholder="أدخل رقم الهاتف" required>
+
+            <!-- الرقم المرسل منه -->
+            <label for="sender-number">الرقم المرسل منه:</label>
+            <input type="text" id="sender-number" name="sender_number" placeholder="أدخل الرقم المرسل منه" required>
+
+            <!-- البريد الإلكتروني -->
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <!-- رفع صورة الإرسال -->
+            <label for="transfer-image">إرفاق صورة الإرسال:</label>
+            <input type="file" id="transfer-image" name="transfer_image" accept="image/*" required>
+
+            <!-- زر التأكيد -->
+            <button type="submit">تأكيد التبرع</button>
+        </form>
+    </div>
+
+</body>
+</html>
